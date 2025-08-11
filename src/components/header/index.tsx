@@ -42,13 +42,13 @@ export default function Header() {
 
   return (
     <div>
-      <header className="bg-black/70 fixed top-0 left-0 right-0 backdrop-blur z-[1000] border-b border-[#00a6ff33]">
-        <nav className="flex items-center justify-between px-8 py-4 max-w-screen-xl mx-auto">
+      <header className="bg-black/70 relative top-0 left-0 right-0 backdrop-blur z-[1000] border-b border-[#00a6ff33]">
+        <nav className="flex items-center justify-between px-8 py-6 max-w-screen-xl mx-auto">
           <Link href="/">
             <div className="flex items-center gap-2">
-              <img src="" alt="Icone da Zynk Store" className="w-20" />
-              <span className="text-2xl font-extrabold uppercase tracking-wide bg-gradient-to-r from-[#64bcf4] to-[#afd2e6] bg-clip-text text-transparent select-none">
-                Zynk Store
+              {/* <img src="" alt="Icone da Zynk Store" className="w-20" /> */}
+              <span className="text-2xl font-extrabold uppercase tracking-wide bg-gradient-to-r from-[#B9030F] to-[#E1E3DB] bg-clip-text text-transparent select-none">
+                João Melo
               </span>
             </div>
           </Link>
@@ -64,22 +64,22 @@ export default function Header() {
             <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur border-b border-[#00a6ff33]" >
               <ul className="flex flex-col py-4 px-8 gap-4">
                 <li>
-                  <Link href="/" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} onClick={() => setIsMenuOpen(false)} >
+                  <Link href="/" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/produtos" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/produtos") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} onClick={() => setIsMenuOpen(false)} >
+                  <Link href="/produtos" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/produtos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
                     Produtos
                   </Link>
                 </li>
                 <li>
-                  <Link href="/duvidas" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/duvidas") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} onClick={() => setIsMenuOpen(false)} >
+                  <Link href="/duvidas" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/duvidas") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
                     Duvidas
                   </Link>
                 </li>
                 <li>
-                  <Link href="/termos" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/termos") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} onClick={() => setIsMenuOpen(false)} >
+                  <Link href="/termos" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/termos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
                     Termos de Uso
                   </Link>
                 </li>
