@@ -90,22 +90,22 @@ export default function Header() {
           {/* DESKTOP MENU */}
           <ul className="md:flex list-none gap-8 hidden">
             <li>
-              <Link href="/" className={`font-medium relative transition-all duration-300 text-[1rem] ${ isActiveLink("/") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} >
+              <Link href="/" className={`font-medium relative transition-all duration-300 text-[1rem] ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/produtos" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/produtos") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} >
+              <Link href="/produtos" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/produtos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
                 Produtos
               </Link>
             </li>
             <li>
-              <Link href="/duvidas" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/duvidas") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} >
+              <Link href="/duvidas" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/duvidas") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
                 Dúvidas
               </Link>
             </li>
             <li>
-              <Link href="/termos" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/termos") ? "text-[#64bcf4]" : "text-white hover:text-[#64bcf4]" }`} >
+              <Link href="/termos" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/termos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
                 Termos de Uso
               </Link>
             </li>
