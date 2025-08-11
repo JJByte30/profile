@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <div>
-      <header className="bg-black/70 relative top-0 left-0 right-0 backdrop-blur z-[1000] border-b border-[#00a6ff33]">
+      <header className="bg-black/70 relative top-0 left-0 right-0 backdrop-blur z-[1000] border-b border-[#b9030f3c]">
         <nav className="flex items-center justify-between px-8 py-6 max-w-screen-xl mx-auto">
           <Link href="/">
             <div className="flex items-center gap-2">
@@ -61,7 +61,7 @@ export default function Header() {
 
           {/* MOBILE MENU */}
           {isMenuOpen && (
-            <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur border-b border-[#00a6ff33]" >
+            <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur border-b border-[#b9030f3c]" >
               <ul className="flex flex-col py-4 px-8 gap-4">
                 <li>
                   <Link href="/" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >

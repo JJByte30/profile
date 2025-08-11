@@ -19,10 +19,10 @@ export default function Section1 () {
         </div>
         <div className="">
           <ul className="flex flex-col gap-4 *:border *:px-4 *:rounded-md *:py-3 *:border-[#9E0004] *:shadow-lg *:shadow-[#9E0004]/15 text-center">
-              <Link href="/direito"><li><button className="">Direito</button></li></Link>
-              <Link href="/desenvolvedor"><li><button className="">Desenvolvedor Front-end</button></li></Link>
-              <Link href="/editor"><li><button className="">Editor de Vídeo</button></li></Link>
-              <Link href="/social"><li><button className="">Redes Sociais</button></li></Link>
+              <li><Link href="./direito"><button className="">Direito</button></Link></li>
+              <li><Link href="/desenvolvedor"><button className="">Desenvolvedor Front-end</button></Link></li>
+              <li><Link href="/editor"><button className="">Editor de Vídeo</button></Link></li>
+              <li><Link href="/social"><button className="">Redes Sociais</button></Link></li>
           </ul>
         </div>
       </div>

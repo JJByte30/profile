@@ -1,7 +1,7 @@
 export default function Direito () {
     return (
-        <section>
+        <div>
             <p>teste</p>
-        </section>
+        </div>
     );
 }
