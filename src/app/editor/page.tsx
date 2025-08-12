@@ -29,7 +29,7 @@ export default function Editor () {
                     <h2 className="text-lg font-extrabold uppercase tracking-wider text-center bg-gradient-to-r from-[#B9030F] to-white bg-clip-text text-transparent">Editor de Vídeo</h2>
                 </div>
                 <div className="">
-                    <ul className="flex flex-col tracking-wider list-disc gap-y-4">
+                    <ul className="flex flex-col tracking-wider list-disc marker:text-white gap-y-4">
                         {lista.map(({titulo, texto}, index) => {
                             return (
                                 <li key={index}>
