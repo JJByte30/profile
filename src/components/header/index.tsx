@@ -64,23 +64,23 @@ export default function Header() {
             <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur border-b border-[#b9030f3c]" >
               <ul className="flex flex-col py-4 px-8 gap-4">
                 <li>
-                  <Link href="/" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
-                    Home
+                  <Link href="/" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
+                    Menu
                   </Link>
                 </li>
                 <li>
-                  <Link href="/produtos" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/produtos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
-                    Produtos
+                  <Link href="/direito" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/direito") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
+                    Direito
                   </Link>
                 </li>
                 <li>
-                  <Link href="/duvidas" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/duvidas") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
-                    Duvidas
+                  <Link href="/desenvolvedor" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/desenvolvedor") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
+                    Desenvolvedor
                   </Link>
                 </li>
                 <li>
-                  <Link href="/termos" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/termos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} onClick={() => setIsMenuOpen(false)} >
-                    Termos de Uso
+                  <Link href="/social" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/social") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
+                    Social
                   </Link>
                 </li>
               </ul>
@@ -90,23 +90,23 @@ export default function Header() {
           {/* DESKTOP MENU */}
           <ul className="md:flex list-none gap-8 hidden">
             <li>
-              <Link href="/" className={`font-medium relative transition-all duration-300 text-[1rem] ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
-                Home
+              <Link href="/" className={`font-medium relative transition-all duration-300 text-[1rem] ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
+                Menu
               </Link>
             </li>
             <li>
-              <Link href="/produtos" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/produtos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
-                Produtos
+              <Link href="/direito" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/direito") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
+                Direito
               </Link>
             </li>
             <li>
-              <Link href="/duvidas" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/duvidas") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
-                Dúvidas
+              <Link href="/desenvolvedor" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/desenvolvedor") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
+                Desenvolvedor
               </Link>
             </li>
             <li>
-              <Link href="/termos" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/termos") ? "text-[#B9030F]" : "text-white hover:text-[#B9030F]" }`} >
-                Termos de Uso
+              <Link href="/social" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/social") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
+                Social
               </Link>
             </li>
           </ul>
