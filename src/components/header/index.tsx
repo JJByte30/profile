@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <div>
-      <header className="bg-black/70 relative top-0 left-0 right-0 backdrop-blur z-[1000] border-b border-[#b9030f3c]">
+      <header className="bg-black relative top-0 left-0 right-0 backdrop-blur z-[1000] border-b border-[#b9030f3c]">
         <nav className="flex items-center justify-between px-8 py-6 max-w-screen-xl mx-auto">
           <Link href="/">
             <div className="flex items-center gap-2">

@@ -33,8 +33,8 @@ export default function Direito () {
                         {lista.map(({titulo, texto}, index) => {
                             return (
                                 <li key={index}>
-                                    <h2 className="font-semibold">{titulo}</h2>
-                                    <p>{texto}</p>
+                                    <h2 className="font-semibold text-white">{titulo}</h2>
+                                    <p className="text-white">{texto}</p>
                                 </li>
                             )
                         })}

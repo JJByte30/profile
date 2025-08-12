@@ -33,8 +33,8 @@ export default function Social () {
                         {lista.map(({titulo, imagem}, index) => {
                             return (
                                 <li key={index}>
-                                    <h2 className="font-semibold">{titulo}:</h2>
-                                    <img src={imagem} alt={titulo}/>
+                                    <h2 className="font-semibold text-white">{titulo}:</h2>
+                                    <img src={imagem} alt={titulo} className="text-white"/>
                                 </li>
                             )
                         })}
