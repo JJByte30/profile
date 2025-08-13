@@ -1,23 +1,34 @@
+/* eslint-disable @next/next/no-img-element */
 import Profile from "@/components/perfil/profile";
+import Link from "next/link";
 
 interface Sobre {
     titulo: string,
-    imagem: string
+    imagem: string,
+    link: string
 }
 
 export default function Social () {
         const lista: Sobre[] =  [
         {
             titulo: "Instagram",
-            imagem: ""
+            imagem: "/instagram.svg",
+            link: "https://www.instagram.com/jjaojose"
         },
         {
             titulo: "Github",
-            imagem: "texto"
+            imagem: "/github.svg",
+            link: "https://github.com/JJByte30"
         },
         {
             titulo: "Linkedin",
-            imagem: "texto"
+            imagem: "/linkedin.svg",
+            link: "https://www.linkedin.com/in/devjoaojosejunior"
+        },
+        {
+            titulo: "Tiktok",
+            imagem: "/tiktok.svg",
+            link: "https://www.tiktok.com/@blazz.aep"
         }
         
     ]
@@ -30,17 +41,24 @@ export default function Social () {
                 </div>
                 <div className="">
                     <ul className="flex flex-col tracking-wider gap-y-4">
-                        {lista.map(({titulo, imagem}, index) => {
+                        {lista.map(({titulo, imagem, link}, index) => {
                             return (
                                 <li key={index}>
-                                    <h2 className="font-semibold text-white">{titulo}:</h2>
-                                    <img src={imagem} alt={titulo} className="text-white"/>
+                                        <a href={link} target="_blank" className="flex flex-col items-center text-center gap-2">
+                                            <h2 className="font-semibold text-white">{titulo}</h2>
+                                            <img src={imagem} alt={titulo} className="text-white w-14"/>
+                                        </a>
                                 </li>
                             )
                         })}
                     </ul>
                 </div>
             </div>
+            <Link href="/desenvolvedor">
+                <div className="absolute left-4 top-[40%] -translate-y-1/2">
+                    <img src="/arrowright.svg" alt="" className="invert"/>
+                </div>
+            </Link>
         </section>
     );
 }

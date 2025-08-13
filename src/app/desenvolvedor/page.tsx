@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Profile from "@/components/perfil/profile";
+import Link from "next/link";
 
 interface Sobre {
     titulo: string,
@@ -41,6 +43,16 @@ export default function Desenvolvedor () {
                     </ul>
                 </div>
             </div>
+            <Link href="/direito">
+                <div className="absolute left-4 top-[40%] -translate-y-1/2">
+                    <img src="/arrowright.svg" alt="" className="invert"/>
+                </div>
+            </Link>
+            <Link href="/social">
+                <div className="absolute right-4 top-[40%] -translate-y-1/2">
+                    <img src="/arrowleft.svg" alt="" className="invert"/>
+                </div>
+            </Link>
         </section>
     );
 }
