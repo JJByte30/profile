@@ -43,7 +43,7 @@ export default function Direito () {
                     </ul>
                 </div>
             </div>
-            <Link href="/">
+            <Link href="/social">
                 <div className="absolute left-4 top-[40%] -translate-y-1/2">
                     <img src="/arrowright.svg" alt="" className="invert"/>
                 </div>

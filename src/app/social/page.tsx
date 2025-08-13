@@ -59,6 +59,11 @@ export default function Social () {
                     <img src="/arrowright.svg" alt="" className="invert"/>
                 </div>
             </Link>
+            <Link href="/direito">
+                <div className="absolute right-4 top-[40%] -translate-y-1/2">
+                    <img src="/arrowleft.svg" alt="" className="invert"/>
+                </div>
+            </Link>
         </section>
     );
 }
