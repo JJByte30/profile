@@ -54,7 +54,7 @@ export default function Social () {
                     </ul>
                 </div>
             </div>
-            <Link href="/desenvolvedor">
+            <Link href="/editor">
                 <div className="absolute left-4 top-[40%] -translate-y-1/2">
                     <img src="/arrowright.svg" alt="" className="invert"/>
                 </div>

@@ -48,7 +48,7 @@ export default function Desenvolvedor () {
                     <img src="/arrowright.svg" alt="" className="invert"/>
                 </div>
             </Link>
-            <Link href="/social">
+            <Link href="/editor">
                 <div className="absolute right-4 top-[40%] -translate-y-1/2">
                     <img src="/arrowleft.svg" alt="" className="invert"/>
                 </div>

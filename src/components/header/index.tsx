@@ -63,11 +63,6 @@ export default function Header() {
             <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur border-b border-[#b9030f3c]" >
               <ul className="flex flex-col py-4 px-8 gap-4">
                 <li>
-                  <Link href="/" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
-                    Menu
-                  </Link>
-                </li>
-                <li>
                   <Link href="/direito" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/direito") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
                     Direito
                   </Link>
@@ -75,6 +70,11 @@ export default function Header() {
                 <li>
                   <Link href="/desenvolvedor" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/desenvolvedor") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
                     Desenvolvedor
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/editor" className={`font-medium block py-2 transition-all duration-300 ${ isActiveLink("/editor") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} onClick={() => setIsMenuOpen(false)} >
+                    Editor de Vídeo
                   </Link>
                 </li>
                 <li>
