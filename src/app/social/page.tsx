@@ -34,14 +34,14 @@ export default function Social () {
         
     ]
     return (
-        <section id="home" className="min-h-screen mb-6 flex bg-gradient-to-br from-black via-[#200704] to-black relative overflow-hidden">
+        <section id="home" className="min-h-screen md:pb-0 pb-6 flex bg-gradient-to-br from-black via-[#200704] to-black relative overflow-hidden">
             <div className="flex flex-col mt-16 gap-6 max-w-[1200px] mx-auto px-8 z-10">
                 <div className="flex flex-col items-center">
                     <Profile/>
                     <h2 className="text-lg font-extrabold uppercase tracking-wider text-center bg-gradient-to-r from-[#B9030F] to-white bg-clip-text text-transparent">Social</h2>
                 </div>
                 <div className="">
-                    <ul className="flex flex-col tracking-wider gap-y-4">
+                    <ul className="flex md:flex-row md:gap-x-8 flex-col tracking-wider gap-y-4">
                         {lista.map(({titulo, imagem, link}, index) => {
                             return (
                                 <li key={index}>

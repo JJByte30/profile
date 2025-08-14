@@ -89,11 +89,6 @@ export default function Header() {
           {/* DESKTOP MENU */}
           <ul className="md:flex list-none gap-8 hidden">
             <li>
-              <Link href="/" className={`font-medium relative transition-all duration-300 text-[1rem] ${ isActiveLink("/") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
-                Menu
-              </Link>
-            </li>
-            <li>
               <Link href="/direito" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/direito") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
                 Direito
               </Link>
@@ -101,6 +96,11 @@ export default function Header() {
             <li>
               <Link href="/desenvolvedor" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/desenvolvedor") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
                 Desenvolvedor
+              </Link>
+            </li>
+            <li>
+              <Link href="/editor" className={`font-medium relative transition-all duration-300 ${ isActiveLink("/editor") ? "text-[#B9030F]" : "text-white hover:text-[#ec4652]" }`} >
+                Editor de Vídeo
               </Link>
             </li>
             <li>

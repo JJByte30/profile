@@ -36,20 +36,21 @@ export default function Contact () {
             <div className="flex flex-col gap-6 max-w-[1200px] mx-auto px-8 z-10">
                 <div className=" w-180 h-full mt-14">
                     <div className="text-center flex flex-col items-center select-none mb-6">
-                        <h2 className="tracking-widest w-80 text-5xl font-bold"><span className="text-red-500">Entre em</span>{" "}Contato</h2>
+                        <h2 className="tracking-widest w-80 md:w-fit text-5xl font-bold"><span className="text-red-500">Entre em</span>{" "}Contato</h2>
                     </div>
 
                     {/* Formulario */}
                     <div className="">
                         <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-4">
-                            <div className="flex flex-col items-center gap-6 justify-between *:w-80 *:h-12 *:rounded-lg ">
-                                <input type="text" name="name" placeholder="Nome" className="text-white text-lg normal-case px-4 border border-neutral-500/70 focus:border-red-500 focus:outline-none" autoComplete="off" required/>
+                            <div className="flex md:flex-row flex-col items-center gap-6 justify-between *:w-80 *:h-12 *:rounded-lg ">
+                                {/* <label htmlFor="name">Nome:</label> */}
+                                <input type="text" id="name" name="name" placeholder="Nome" className="text-white text-lg normal-case px-4 border border-neutral-500/70 focus:border-red-500 focus:outline-none" autoComplete="off" required/>
                                 <input type="email" name="email" placeholder="Seu E-mail" className="text-white text-lg normal-case px-4 border border-neutral-500/70 focus:border-red-500 focus:outline-none" autoComplete="off" required/>
                             </div>
-                            <div className="flex flex-col items-center *:w-80 *:h-12 *:rounded-lg">
+                            <div className="flex flex-col items-center md:*:w-full *:w-80 *:h-12 *:rounded-lg">
                                 <input type="text" name="subject" placeholder="Assunto" className="w-full text-white text-lg normal-case px-4 border border-neutral-500/70 focus:border-red-500 focus:outline-none" autoComplete="off" required/>
                             </div>
-                            <div className="flex flex-col items-center *:w-80 *:h-56 *:rounded-lg">
+                            <div className="flex flex-col items-center md:*:w-full *:w-80 *:h-56 *:rounded-lg">
                                 <textarea name="message" placeholder="Mensagem" className="text-white text-lg normal-case px-4 pt-4 border border-neutral-500/70 focus:border-red-500 focus:outline-none resize-none" autoComplete="off" required></textarea>
                             </div>
                             
@@ -61,7 +62,7 @@ export default function Contact () {
                             </div>
 
                             <div className="flex flex-col items-center">
-                                <button type="submit" disabled={isLoading} className={`text-center border w-30 py-3 rounded-lg font-semibold transition-all duration-300 ${isLoading ? "border-gray-500 text-gray-500 cursor-not-allowed" : "border-red-500 text-red-500 hover:bg-red-500 hover:text-white"}`}>
+                                <button type="submit" disabled={isLoading} className={`text-center border md:w-40 w-30 py-3 rounded-lg font-semibold transition-all duration-300 ${isLoading ? "border-gray-500 text-gray-500 cursor-not-allowed" : "border-red-500 text-red-500 hover:bg-red-500 hover:text-white"}`}>
                                     {isLoading ? "Enviando..." : "Enviar"}
                                 </button>
                             </div>
