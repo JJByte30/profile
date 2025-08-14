@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import ButtonNext from "@/components/buttonnext";
 import Profile from "@/components/perfil/profile";
 import Link from "next/link";
 
@@ -24,8 +25,8 @@ export default function Desenvolvedor () {
         
     ]
     return (
-        <section id="home" className="min-h-screen flex items-center bg-gradient-to-br from-black via-[#200704] to-black relative overflow-hidden">
-            <div className="flex flex-col gap-6 max-w-[1200px] mx-auto px-8 z-10">
+        <section id="home" className="min-h-screen flex bg-gradient-to-br from-black via-[#200704] to-black relative overflow-hidden">
+            <div className="flex flex-col mt-16 gap-6 max-w-[1200px] mx-auto px-8 z-10">
                 <div className="flex flex-col items-center">
                     <Profile/>
                     <h2 className="text-lg font-extrabold uppercase tracking-wider text-center bg-gradient-to-r from-[#B9030F] to-white bg-clip-text text-transparent">Desenvolvedor</h2>
@@ -43,16 +44,7 @@ export default function Desenvolvedor () {
                     </ul>
                 </div>
             </div>
-            <Link href="/direito">
-                <div className="absolute left-4 top-[40%] -translate-y-1/2">
-                    <img src="/arrowright.svg" alt="" className="invert"/>
-                </div>
-            </Link>
-            <Link href="/editor">
-                <div className="absolute right-4 top-[40%] -translate-y-1/2">
-                    <img src="/arrowleft.svg" alt="" className="invert"/>
-                </div>
-            </Link>
+            <ButtonNext proximo = "/editor" anterior = "/direito"/>
         </section>
     );
 }
