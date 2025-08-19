@@ -15,19 +15,19 @@ export default function Section1 () {
           </div>
           <div className="flex flex-row justify-center text-center md:gap-12 gap-2 font-semibold *:flex *:flex-col md:mt-4">
             <div className="flex flex-col items-center gap-2">
-              <h2>Direito: </h2>
+              <h2 className="text-white">Direito: </h2>
               <CircleProgress percentage={10} color="#9E0004" size={{ mobile: 80, desktop: 100 }} content="1/10"/>
-              <h2>1/10</h2>
+              <h2 className="text-white">1/10</h2>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <h2>Editor:</h2>
+              <h2 className="text-white">Editor:</h2>
               <CircleProgress percentage={70} color="#9E0004" size={{ mobile: 80, desktop: 100 }} content="+10"/>
-              <h2>+10 anos</h2>
+              <h2 className="text-white">+10 anos</h2>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <h2>Dev:</h2>
+              <h2 className="text-white">Dev:</h2>
               <CircleProgress percentage={20} color="#9E0004" size={{ mobile: 80, desktop: 100 }} content="1"/>
-              <h2>1 ano</h2>
+              <h2 className="text-white">1 ano</h2>
             </div>
           </div>
         </div>
