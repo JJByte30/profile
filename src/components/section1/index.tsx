@@ -1,15 +1,34 @@
+"use client"
 import Link from "next/link";
 import Profile from "../perfil/profile";
+import CircleProgress from "../circle";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Section1 () {
     return (
     <section id="home" className="min-h-screen flex bg-gradient-to-br from-black via-[#200704] to-black relative overflow-hidden" >
-      <div className="flex md:justify-between md:w-full md:px-14 md:flex-row md:mt-0 flex-col mt-16 gap-6 items-center max-w-[1200px] mx-auto px-8 z-10">
-        <div className="flex flex-col items-center md:gap-6 md:mb-28">
+      <div className="flex md:justify-between md:w-full md:px-14 md:flex-row md:mt-0 flex-col mt-16 gap-6 items-center max-w-[1200px] mb-6 mx-auto px-8 z-10">
+        <div className="flex flex-col items-center gap-3 md:gap-6 md:mb-28">
           <Profile/>
           <div className="text-center md:w-120">
-              <p className="text-white text-balance">{"("}Sobre{")"}, estudante de Direito, formado em Análise e Desenvolvimento de Sistemas, com 10 anos de experiencia como editor de video...</p>
+              <p className="text-white text-balance">Prazer, meu nome é <span className="font-semibold">João José</span>. Sou estudante de <span className="font-semibold">Direito na Uniube</span>, formado em <span className="font-semibold">Análise e Desenvolvimento de Sistemas</span> e tenho mais de <span className="font-semibold">10 anos de experiência como editor de vídeo</span>.</p>
+          </div>
+          <div className="flex flex-row justify-center text-center md:gap-12 gap-2 font-semibold *:flex *:flex-col md:mt-4">
+            <div className="flex flex-col items-center gap-2">
+              <h2>Direito: </h2>
+              <CircleProgress percentage={10} color="#9E0004" size={{ mobile: 80, desktop: 100 }} content="1/10"/>
+              <h2>1/10</h2>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <h2>Editor:</h2>
+              <CircleProgress percentage={70} color="#9E0004" size={{ mobile: 80, desktop: 100 }} content="+10"/>
+              <h2>+10 anos</h2>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <h2>Dev:</h2>
+              <CircleProgress percentage={20} color="#9E0004" size={{ mobile: 80, desktop: 100 }} content="1"/>
+              <h2>1 ano</h2>
+            </div>
           </div>
         </div>
         <div className="">
