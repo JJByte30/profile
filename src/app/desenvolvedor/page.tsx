@@ -27,15 +27,15 @@ export default function Desenvolvedor() {
                             <h2 className="font-semibold text-white">- Linguagens:</h2>
                             <div className="flex flex-col text-sm md:flex-row gap-2">
                                 <div className="">
-                                    <p className="font-semibold">Front-end:</p>
+                                    <p className="text-white font-semibold">Front-end:</p>
                                     <p className="text-white"> React, Next.js, Angular, JavaScript, TypeScript, HTML5, CSS3 (Tailwind)</p>
                                 </div>
                                 <div>
-                                    <p className="font-semibold">Back-end:</p>
+                                    <p className="text-white font-semibold">Back-end:</p>
                                     <p className="text-white">Java (Spring Boot)</p>
                                 </div>
                                 <div>
-                                    <p className="font-semibold">Banco de Dados:</p>
+                                    <p className="text-white font-semibold">Banco de Dados:</p>
                                     <p className="text-white">SQL, MySQL, PostgreSQL</p>
                                 </div>
                             </div>

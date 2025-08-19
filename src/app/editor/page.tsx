@@ -29,11 +29,11 @@ export default function Editor() {
                             <h2 className="font-semibold text-white">- Plataformas e Plugins:</h2>
                             <div className="flex flex-col text-sm md:flex-row gap-4">
                                 <div>
-                                    <p className="font-semibold">Plataformas:</p>
+                                    <p className="text-white font-semibold">Plataformas:</p>
                                     <p className="text-white"><span className="font-medium">After Effects, Adobe Premiere, Photoshop, Sony Vegas, Camtasia Studio</span></p>
                                 </div>
                                 <div>
-                                    <p className="font-semibold">Plugins & Efeitos:</p>
+                                    <p className="text-white font-semibold">Plugins & Efeitos:</p>
                                     <p className="text-white"><span className="font-medium">Magic Bullet, Sapphire, S_Shark, Red Giant Universe, Trapcode Particular, Optical Flares, Element 3D, Twitch, Saber, transições personalizadas, Color Grading, Motion Graphics, animações tipográficas</span></p>
                                 </div>
                             </div>

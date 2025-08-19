@@ -36,7 +36,7 @@ export default function Contact () {
             <div className="flex flex-col gap-6 max-w-[1200px] mx-auto px-8 z-10">
                 <div className=" w-180 h-full mt-14">
                     <div className="text-center flex flex-col items-center select-none mb-6">
-                        <h2 className="tracking-widest w-80 md:w-fit text-5xl font-bold"><span className="text-red-500">Entre em</span>{" "}Contato</h2>
+                        <h2 className="text-white tracking-widest w-80 md:w-fit text-5xl font-bold"><span className="text-red-500">Entre em</span>{" "}Contato</h2>
                     </div>
 
                     {/* Formulario */}
